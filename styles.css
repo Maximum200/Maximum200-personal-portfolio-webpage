@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+    }
+
+header {
+    display: flex;
+    height: 5%;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    align-items: center;
+    background-color: gray;
+    position: fixed; 
+    top: 0; 
+    z-index: 999;
+            } /*  What this code does is to stick the header of the website to the top of the website. 
+                      Useful for keeping links that direct to other parts of the page or other pages */
+
+@media (max-height: 400px) {
+    header {
+        height: 20px;
+        }
+    } /* What this code does is to keep the header a certain size (20px) if the height of the screen is too small. 
+             Useful for small screens such as on phones. */
+
+.logo {
+    aspect-ratio: 1 / 1;
+    height: 100%;
+    background-color: rgb(234, 255, 0);
+    position: relative;
+    }
+
+.eyes {
+    aspect-ratio: 1 / 1;
+    height: 10%;
+    background-color: black;
+    position: absolute;
+    top: 35%;
+    }
+
+.left {
+    left: 10%;
+    }
+
+.right {
+    right: 10%;
+    }
+
+.smile {
+    height: 30%;
+    width: 80%;
+    top: 60%;
+    right: 10%;
+    bottom: 10%;
+    left: 10%;
+    position: absolute;
+    background-color: black;
+    }
+
+main {
+    margin-top: 5%;
+    background-color: #fae078
+    } /* What this code does is to prevent text from overlapping the header of the website.*/
+
+.self-intro {
+    display: flex;
+    height: 100px;
+    }
+
+.thought-bubble-area {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    }
+
+.thought-bubble {
+    width: 100%;
+    height: 100%;
+    border-radius: 50% / 50%;
+    background-color: #ccc;
+    margin: auto;
+    position: absolute;
+    }
+
+.thought-bubble-area h1 {
+    position: absolute;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    margin: auto;
+    z-index: 1;
+    }
+
+#about-me-text {
+    text-align: center;
+    margin-left: 10%;
+    }
+
+table, th, td { /* Temporary measure for visibilty purposes*/
+    border: 3px solid black;
+    }
+
+iframe {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    }
+
+#book-img {
+    height: 30%;
+    width: 30%;
+    padding: 0;
+    margin: 0;
+}
+
+.css {
+    height: 200px;
+    width: 100%;
+    position: relative;
+    padding-bottom: 50px;
+    }
+
+#night-sky {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    }
+
+.moon {
+    height: 50%;
+    aspect-ratio: 1 / 1;
+    background-color: #F6F1D5;
+    border-radius: 50%;
+    }
+
+.stars{
+    width: 4px;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    left: 10%;
+}
+
+.stars:nth-of-type(even) {
+    bottom: 30%;
+    }
+
+.stars:nth-of-type(odd) {
+    top: 30%;
+    }
+
+.stars:first-child {
+    left: 20%;
+    }
+
+.stars:nth-child(2) {
+    left: 30%
+    }
+
+.stars:nth-child(3) {
+    left: 45%
+    }
+
+.stars:nth-child(4) {
+    left: 60%
+    }
+
+.stars:nth-child(5) {
+    left: 80%
+    }
+
+.css p {
+    padding-bottom: 10px;
+    }
+
+#shifting-rainbow {
+    height: 100%;
+    width: 100%;
+}
+
+.rainbow {
+    height: 100%;
+    background: linear-gradient(to right, 
+      red, orange, yellow, green, blue, indigo, violet
+    );
+    animation: rainbow 10s ease infinite;
+    background-size: 1400% 100%;
+    }
+
+    @keyframes rainbow {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 100% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+}
+
+#moving-bicycle {
+    height: 100%;
+    width: 100%;
+    }
+
+.wheel {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 5px solid black;
+    position: relative;
+    animation: wheel 10s linear infinite;
+    }
+
+@keyframes wheel {
+    0% {
+        transform: rotate(0deg);
+        }
+    
+    100% {
+        transform: rotate(360deg);
+        }
+    }
+
+.line {
+    height: 50%;
+    width: 2px;
+    left: 50%;
+    position: absolute;
+    background-color: grey;
+    transform-origin: bottom;
+}
+
+.line:nth-of-type(2) {
+    transform: rotate(120deg);
+    }
+
+.line:nth-of-type(3) {
+    transform: rotate(240deg);
+    }
